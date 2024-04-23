@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import logoImage from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { CiMenuBurger } from "react-icons/ci";
