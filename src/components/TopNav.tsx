@@ -11,7 +11,7 @@ const TopNav = () => {
         setOpen((prev) => !prev)
     }
     return (
-        <header className='fixed w-full top-0 left-0 flex flex-col md:flex-row items-center  xl:items-start justify-between px-10 py-5'>
+        <header className='fixed w-full top-0 left-0 flex flex-col md:flex-row items-center  xl:items-start justify-between px-10 py-5 z-10'>
             <div className='w-full md:w-max flex justify-between items-center'>
                 <div className='w-20 xl:w-32 min-w-20'>
                     <img src={logoImage} className='w-full h-full object-contain' />
@@ -22,7 +22,7 @@ const TopNav = () => {
                     }
                 </div>
             </div>
-            <nav className={`backdrop-blur-md xl:top-0 right-0 w-full xl:relative flex flex-col xl:flex-row items-center justify-center gap-2 py-10 transition-all duration-500 overflow-hidden xl:py-0 ${isOpen ? 'opacity-100 h-max' : 'opacity-0 h-0 xl:h-max  xl:opacity-100'}`}>
+            <nav className={`backdrop-blur-md md:backdrop-blur-none xl:top-0 right-0 w-full xl:relative flex flex-col xl:flex-row items-center justify-center gap-2 py-10 transition-all duration-500 overflow-hidden xl:py-0 ${isOpen ? 'opacity-100 h-max' : 'opacity-0 h-0 xl:h-max  xl:opacity-100'}`}>
                 <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Home</Link>
                 <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>About us</Link>
                 <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Free Tutorials</Link>

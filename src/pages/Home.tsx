@@ -3,7 +3,7 @@ import Section01 from '../components/Section01'
 
 const Home = () => {
   return (
-    <main>
+    <main className='relative'>
         <TopNav/>
         <Section01/>
     </main>
