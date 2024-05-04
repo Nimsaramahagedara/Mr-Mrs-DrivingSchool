@@ -4,7 +4,7 @@ import cross from '../assets/cross.png'
 import StatBar from './StatBar'
 const Section01 = () => {
   return (
-    <section className='min-h-screen relative bg-[#050A1E]'>
+    <section className='min-h-screen relative bg-[#050A1E] rounded-br-[30%]'>
       <div className='absolute top-0 left-0 w-32 xl:w-60 aspect-square'>
         <img src={shapeTop} alt="top" className='w-full h-full object-cover' />
       </div>
