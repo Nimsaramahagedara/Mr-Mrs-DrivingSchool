@@ -25,7 +25,7 @@ const MainSection = () => {
       <div className='absolute top-0 left-0 w-32 xl:w-60 aspect-square'>
         <img src={shapeTop} alt="top" className='w-full h-full object-cover' />
       </div>
-      <motion.div className='absolute -top-20 right-0 w-32 xl:w-60 aspect-square' animate={
+      <motion.div className='absolute md:-top-20 right-0 w-32 xl:w-60 aspect-square' animate={
         {
           rotateZ: [0, 360],
           transition: {
