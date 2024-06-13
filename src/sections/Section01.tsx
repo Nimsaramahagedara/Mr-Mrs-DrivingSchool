@@ -1,7 +1,7 @@
 import shapeTop from '../assets/shape-0.png'
 import squareTop from '../assets/square.png'
 import cross from '../assets/cross.png'
-import StatBar from './StatBar'
+import StatBar from '../components/StatBar'
 import mainImage from '../assets/main-image.png'
 import { CiCirclePlus } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -21,7 +21,7 @@ const Section01 = () => {
   };
 
   return (
-    <section className='min-h-screen relative bg-[#050A1E] rounded-br-[10%] md:rounded-br-[30%] overflow-hidden'>
+    <section className='min-h-screen relative bg-[#050A1E] rounded-br-[50px] md:rounded-br-[25%] overflow-hidden'>
       <div className='absolute top-0 left-0 w-32 xl:w-60 aspect-square'>
         <img src={shapeTop} alt="top" className='w-full h-full object-cover' />
       </div>
