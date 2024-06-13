@@ -1,12 +1,12 @@
 import React from 'react'
 import Container from '../components/Container'
 
-const Section03 = () => {
+const AboutUsSection = () => {
   return (
     <Container bgPrimary>
-        Con
+        AboutUsSection
     </Container>
   )
 }
 
-export default Section03
+export default AboutUsSection

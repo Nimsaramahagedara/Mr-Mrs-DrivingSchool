@@ -3,7 +3,7 @@ import logoBig from '../assets/logo-big-shade.png'
 import VisionBox from '../components/VisionBox'
 import Curve from '../components/Curve'
 import Container from '../components/Container'
-const Section02 = () => {
+const VisionSection = () => {
     return (
         <Container bgPrimary={false} childClassName='flex items-center justify-center'>
             <img src={logoBig} className='w-1/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0' />
@@ -28,4 +28,4 @@ const Section02 = () => {
     )
 }
 
-export default Section02
+export default VisionSection

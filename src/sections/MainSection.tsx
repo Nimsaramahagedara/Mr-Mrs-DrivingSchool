@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import triangle1 from '../assets/triangle-1.png'
 import triangle2 from '../assets/triangle-2.png'
 import {motion} from 'framer-motion'
-const Section01 = () => {
+const MainSection = () => {
 
   const moveAnimation = {
     x: [0, -10, 0],
@@ -106,4 +106,4 @@ const Section01 = () => {
   )
 }
 
-export default Section01
+export default MainSection
