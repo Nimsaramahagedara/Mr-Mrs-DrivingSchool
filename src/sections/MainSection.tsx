@@ -8,7 +8,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 import triangle1 from '../assets/triangle-1.png'
 import triangle2 from '../assets/triangle-2.png'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import ProgressBar from '../components/ProgressBar'
+import Button from '../components/Button'
 const MainSection = () => {
 
   const moveAnimation = {
@@ -16,12 +18,12 @@ const MainSection = () => {
     transition: {
       repeat: Infinity,
       repeatType: 'loop',
-      duration: 2, 
+      duration: 2,
     },
   };
 
   return (
-    <section className='min-h-screen relative bg-[#050A1E] rounded-br-[50px] md:rounded-br-[25%] overflow-hidden'>
+    <section className='min-h-screen relative bg-[#050A1E] rounded-br-[50px] md:rounded-br-[300px] overflow-hidden'>
       <div className='absolute top-0 left-0 w-32 xl:w-60 aspect-square'>
         <img src={shapeTop} alt="top" className='w-full h-full object-cover' />
       </div>
@@ -31,7 +33,7 @@ const MainSection = () => {
           transition: {
             repeat: Infinity,
             repeatType: 'loop',
-            duration: 20, 
+            duration: 20,
           },
         }
       }>
@@ -46,12 +48,11 @@ const MainSection = () => {
           <h1 className='text-4xl lg:text-6xl '>Welcome to <span className='text-amber-400'>Mr & Mrs </span> Driving School  </h1>
           <p>Lorem ipsum Sunt cupidatat reprehenderit cillum reprehenderit incididunt
             consequat aute et proident tempor occaecat.</p>
-          <div className='w-full bg-amber-200 rounded-full overflow-hidden'>
-            <div className='p-[2px] bg-amber-400 w-1/3'>
-            </div>
-          </div>
+          <ProgressBar />
           <div className='flex flex-col lg:flex-row items-start gap-5 lg:gap-10'>
-            <button className='bg-amber-400 px-4 py-3 rounded-full text-black hover:bg-amber-500 flex items-center justify-center gap-1 font-semibold text-nowrap'>Work Together <CiCirclePlus size={32} color='#fff' /></button>
+            <Button>
+              Work Together
+            </Button>
             <Link to={''} className='flex items-center justify-start gap-3 text-red-500 hover:text-red-300'>
               <div className='p-4 border border-red-500 hover:border-red-300 rounded-full'>
                 <FaPhoneAlt size={22} color='' />
@@ -72,30 +73,30 @@ const MainSection = () => {
                 transition: {
                   repeat: Infinity,
                   repeatType: 'loop',
-                  duration: 2, 
+                  duration: 2,
                 },
               }
-            }/>
+            } />
             <motion.img src={triangle2} className='w-5 lg:w-7' animate={
               {
                 x: [0, -10, 0],
                 transition: {
                   repeat: Infinity,
                   repeatType: 'loop',
-                  duration: 2, 
+                  duration: 2,
                 },
               }
-            }/>
+            } />
             <motion.img src={triangle2} className='w-5 lg:w-7' animate={
               {
                 x: [0, -5, 0],
                 transition: {
                   repeat: Infinity,
                   repeatType: 'loop',
-                  duration: 2, 
+                  duration: 2,
                 },
               }
-            }/>
+            } />
           </div>
         </div>
       </div>
