@@ -3,10 +3,10 @@ import TopNav from '../components/TopNav'
 import MainSection from '../sections/MainSection'
 import VisionSection from '../sections/VisionSection'
 import AboutUsSection from '../sections/AboutUsSection'
-import Section04 from '../sections/Section04'
 import Section05 from '../sections/Section05'
 import Section06 from '../sections/Section06'
 import Section07 from '../sections/Section07'
+import VideoSection from '../sections/VideoSection'
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <MainSection />
       <VisionSection />
       <AboutUsSection />
-      <Section04 />
+      <VideoSection />
       <Section05 />
       <Section06 />
       <Section07 />

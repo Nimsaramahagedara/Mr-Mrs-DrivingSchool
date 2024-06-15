@@ -9,20 +9,21 @@ import Button from '../components/Button'
 import triangle1 from '../assets/triangle-1.png'
 import triangle2 from '../assets/triangle-2.png'
 import { motion } from 'framer-motion'
+import Counter from '../components/Counter'
 const AboutUsSection = () => {
   return (
     <Container bgPrimary className='flex items-center flex-col justify-center overflow-visible'>
       <div className='w-40 absolute -top-32 right-10 z-0'>
         <img src={shape1} className='w-full h-full object-contain' />
       </div>
-      <div className='flex items-start justify-center flex-col md:flex-row w-full md:w-5/6 mx-auto gap-20 md:gap-5'>
-        <div className='px-5 w-3/4 mx-auto mt-10 md:mt-0 md:w-2/6 relative'>
+      <div className='flex items-start justify-center flex-col lg:flex-row w-full lg:w-5/6 mx-auto gap-20 lg:gap-5 mt-10 lg:mt-0'>
+        <div className='px-5 w-3/4 mx-auto mt-10 md:mt-0 lg:w-2/6 relative'>
           <img src={aboutUsImage} className='w-full h-full object-contain z-10 relative' />
           <div className='w-20 md:w-40 absolute -bottom-10 md:-bottom-20 -left-10 z-0'>
             <img src={shape2} className='w-full h-full object-contain' />
           </div>
         </div>
-        <div className='w-full md:w-3/6 space-y-5 px-5'>
+        <div className='w-full lg:w-3/6 space-y-5 px-5'>
           <h4 className='text-amber-400 text-xl md:text-4xl font-semibold'>ABOUT US</h4>
 
           <h6 className='text-white text-lg md:text-xl font-semibold'>We are Since <span className='text-amber-400'>2022 to Present </span>in Kekanadura, Matara.</h6>
@@ -33,11 +34,37 @@ const AboutUsSection = () => {
           <Button>Read More</Button>
         </div>
       </div>
-      <div className='flex items-center justify-center gap-5 mx-auto my-8 w-2/3'>
+      <div className='flex items-center justify-center gap-5 mx-auto my-8 lg:w-2/3 w-full'>
         <div className='bg-white p-[1px] w-full'></div>
         <p className='w-max md:text-nowrap text-center text-white text-lg md:text-xl'>Consent Finished this Achievement in 3 Years</p>
         <div className='bg-white p-[1px] w-full'></div>
       </div>
+      <div className='flex items-center justify-between w-full px-5 lg:px-0 lg:w-2/3 mb-10 lg:mb-0'>
+        <div className='w-max'>
+          <Counter target={1372} />
+          <p className='text-gray-400 text-xs lg:text-xl'>Training Candidates</p>
+        </div>
+        <div className='w-max'>
+          <div className='flex items-center justify-start gap-2'>
+            <Counter target={23} />
+            <span className='text-amber-400 text-2xl lg:text-6xl font-bold'>+</span>
+          </div>
+          <p className='text-gray-400 text-xs lg:text-xl'>Years Experience</p>
+        </div>
+        <div className='w-max'>
+          <div className='flex items-center justify-start gap-2'>
+            <Counter target={38} />
+            <span className='text-amber-400 text-2xl lg:text-6xl font-bold'>+</span>
+          </div>
+
+          <p className='text-gray-400 text-xs lg:text-xl'>Expert Trainers</p>
+        </div>
+        <div className='w-max'>
+          <Counter target={1372} />
+          <p className='text-gray-400 text-xs lg:text-xl'>Satisfaction Rate</p>
+        </div>
+      </div>
+
 
       <div className='w-1/4 absolute top-1/2 -translate-y-1/2 right-0 z-0'>
         <img src={roadSign} className='w-full h-full object-contain' />
