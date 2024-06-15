@@ -23,9 +23,7 @@ const VideoSection = () => {
         </div>
         <div className='w-full lg:w-3/6 space-y-5 px-5'>
           {/* <YoutubeVideo link='https://youtu.be/Cu5hhxP_prE?si=q2z-Jfnaa2UIVte3'/> */}
-          <Slider>
-            <div></div>
-          </Slider>
+          <Slider/>
         </div>
       </div>
     <img src={roadSign} className='absolute w-1/3 top-0 left-0 z-0' />
