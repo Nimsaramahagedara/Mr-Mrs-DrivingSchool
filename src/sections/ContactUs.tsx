@@ -1,0 +1,77 @@
+import React from 'react'
+import Container from '../components/Container'
+import coverImg from '../assets/cover.png'
+import ProgressBar from '../components/ProgressBar'
+import { FaLocationPin } from 'react-icons/fa6'
+import { IoLocation, IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp, IoMail } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
+const ContactUs = () => {
+  return (
+    <Container bgPrimary className='' >
+      <div style={{ backgroundImage: `url('${coverImg}')` }} className='min-h-screen bg-cover bg-center flex flex-col lg:flex-row items-center justify-center w-full px-10 lg:px-20'>
+        <div className='text-white mx-auto my-8 lg:w-1/2 w-full px-0 lg:px-20'>
+          <h2 className='text-xl lg:text-3xl mb-5'>Let's talk with us</h2>
+          <ProgressBar />
+          <p className=' text-lg lg:text-xl my-10'>Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.</p>
+
+          <div className='flex flex-col space-y-5 lg:space-y-7'>
+            <Link to={'#'} className='flex items-center justify-start gap-3'>
+              <IoLocation size={32} className='text-amber-400' />
+              <span className='text-sm lg:text-xl'>
+                Mr & Mrs Driving School<br />
+                Fuel Station Building,<br />
+                Kekanadura, Matara
+              </span>
+            </Link>
+
+            <Link to='https://wa.me/+94775737727' className='flex items-center justify-start gap-3'>
+              <IoLogoWhatsapp size={32} className='text-amber-400' />
+              <span className='text-sm lg:text-xl'>
+                0775 737 727
+              </span>
+            </Link>
+
+
+            <Link to={'#'} className='flex items-center justify-start gap-3'>
+              <IoLogoFacebook size={32} className='text-amber-400' />
+              <span className='text-sm lg:text-xl'>
+                Mr&Mrs Driving School
+              </span>
+            </Link>
+
+
+            <Link to={'#'} className='flex items-center justify-start gap-3'>
+              <IoLogoInstagram size={32} className='text-amber-400' />
+              <span className='text-sm lg:text-xl'>
+                Mr & Mrs Driving School
+              </span>
+            </Link>
+
+
+            <Link to={'mailto:mrnmrsdrivingschool@gmail.com'} className='flex items-center justify-start gap-3'>
+              <IoMail size={32} className='text-amber-400' />
+              <span className='text-sm lg:text-xl'>
+                mrnmrsdrivingschool@gmail.com
+              </span>
+            </Link>
+          </div>
+        </div>
+        <form className='border-2 border-amber-400 rounded-xl p-5 lg:p-10  mx-auto my-8 lg:w-1/3 w-full flex flex-col items-center space-y-5'>
+          <div className='flex items-center justify-center gap-2 lg:gap-5 w-full'>
+            <input type="text" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='First Name'  />
+            <input type="text" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Last Name'  />
+          </div>
+          <input type="email" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Email'  />
+          <input type="tel" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Phone Number'  />
+          <textarea name="" id="" rows={10} placeholder='Your Message' className='px-4 py-3 rounded-xl outline-none focus:outline-none border-none w-full'>
+
+          </textarea>
+          <button className='bg-amber-400 hover:bg-amber-500 px-5 py-3 rounded-full w-full'>Send Message</button>
+        </form>
+
+      </div>
+    </Container>
+  )
+}
+
+export default ContactUs
