@@ -12,10 +12,10 @@ import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 import YoutubeVideo from './YoutubeVideo';
 type Props = {
-    children: React.ReactNode
+
 }
 
-export default function Slider({ children }: Props) {
+export default function Slider({  }: Props) {
     return (
         <Swiper
             effect={'cards'}
