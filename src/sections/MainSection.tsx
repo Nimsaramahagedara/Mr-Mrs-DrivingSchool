@@ -44,10 +44,25 @@ const MainSection = () => {
       </div>
       <div className='flex flex-col-reverse lg:flex-row items-center justify-center text-white w-full px-10 lg:px-0 lg:w-2/3 mx-auto pt-10 lg:pt-0 min-h-screen'>
         <div className='w-full lg:w-1/2 space-y-5'>
-          <p className="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-1/2 before:w-6 before:h-0.5 before:bg-amber-500">Work With Consen</p>
-          <h1 className='text-4xl lg:text-6xl '>Welcome to <span className='text-amber-400'>Mr & Mrs </span> Driving School  </h1>
-          <p>Lorem ipsum Sunt cupidatat reprehenderit cillum reprehenderit incididunt
-            consequat aute et proident tempor occaecat.</p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-1/2 before:w-6 before:h-0.5 before:bg-amber-500">Work With Consen
+          </motion.p>
+          <motion.h1 className='text-4xl lg:text-6xl '
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}>
+            Welcome to <span className='text-amber-400'>Mr & Mrs </span> Driving School
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}>
+            Lorem ipsum Sunt cupidatat reprehenderit cillum reprehenderit incididunt
+            consequat aute et proident tempor occaecat.
+          </motion.p>
           <ProgressBar />
           <div className='flex flex-col lg:flex-row items-start gap-5 lg:gap-10'>
             <Button>
@@ -65,7 +80,11 @@ const MainSection = () => {
           </div>
         </div>
         <div className='w-full lg:w-1/2 relative'>
-          <img src={mainImage} className='w-full h-full object-contain' />
+          <motion.img src={mainImage} className='w-full h-full object-contain'
+            initial={{ opacity: 0, x:50 }}
+            whileInView={{ opacity: 1, x:0 }}
+            transition={{ duration: 0.8 }}>
+          </motion.img>
           <div className='flex items-center justify-center gap-3 absolute top-0 right-0 w-max'>
             <motion.img src={triangle1} className='w-5 lg:w-7' animate={
               {

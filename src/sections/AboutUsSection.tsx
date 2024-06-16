@@ -14,13 +14,17 @@ const AboutUsSection = () => {
   return (
     <Container bgPrimary className='flex items-center flex-col justify-center overflow-visible'>
       <div className='w-40 absolute -top-32 right-10 z-0'>
-        <img src={shape1} className='w-full h-full object-contain' />
+        <motion.img
+          animate={{ rotateZ: 360, x: 0 }} transition={{ duration: 30 }} src={shape1} className='w-full h-full object-contain' />
       </div>
       <div className='flex items-start justify-center flex-col lg:flex-row w-full lg:w-5/6 mx-auto gap-20 lg:gap-5 mt-10 lg:mt-0'>
         <div className='px-5 w-3/4 mx-auto mt-10 md:mt-0 lg:w-2/6 relative'>
-          <img src={aboutUsImage} className='w-full h-full object-contain z-10 relative' />
+          <motion.img initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }} src={aboutUsImage} className='w-full h-full object-contain z-10 relative' />
           <div className='w-20 md:w-40 absolute -bottom-10 md:-bottom-20 -left-10 z-0'>
-            <img src={shape2} className='w-full h-full object-contain' />
+            <motion.img
+              animate={{ rotateZ: 360, x: 0 }} transition={{ duration: 30 }} src={shape2} className='w-full h-full object-contain' />
           </div>
         </div>
         <div className='w-full lg:w-3/6 space-y-5 px-5'>
