@@ -15,7 +15,7 @@ const ContactUs = () => {
           <p className=' text-lg lg:text-xl my-10'>Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.</p>
 
           <div className='flex flex-col space-y-5 lg:space-y-7'>
-            <Link to={'#'} className='flex items-center justify-start gap-3'>
+            <Link to={'#'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLocation size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 Mr & Mrs Driving School<br />
@@ -24,7 +24,7 @@ const ContactUs = () => {
               </span>
             </Link>
 
-            <Link to='https://wa.me/+94775737727' className='flex items-center justify-start gap-3'>
+            <Link to='https://wa.me/+94775737727' className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLogoWhatsapp size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 0775 737 727
@@ -32,7 +32,7 @@ const ContactUs = () => {
             </Link>
 
 
-            <Link to={'#'} className='flex items-center justify-start gap-3'>
+            <Link to={'#'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLogoFacebook size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 Mr&Mrs Driving School
@@ -40,7 +40,7 @@ const ContactUs = () => {
             </Link>
 
 
-            <Link to={'#'} className='flex items-center justify-start gap-3'>
+            <Link to={'#'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLogoInstagram size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 Mr & Mrs Driving School
@@ -48,7 +48,7 @@ const ContactUs = () => {
             </Link>
 
 
-            <Link to={'mailto:mrnmrsdrivingschool@gmail.com'} className='flex items-center justify-start gap-3'>
+            <Link to={'mailto:mrnmrsdrivingschool@gmail.com'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoMail size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 mrnmrsdrivingschool@gmail.com

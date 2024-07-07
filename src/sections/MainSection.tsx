@@ -11,6 +11,9 @@ import triangle2 from '../assets/triangle-2.png'
 import { motion } from 'framer-motion'
 import ProgressBar from '../components/ProgressBar'
 import Button from '../components/Button'
+import ThreeCross from '../components/ThreeCross'
+import ThreeTriangle from '../components/ThreeTriangle'
+import RotatingSquare from '../components/RotatingSquare'
 const MainSection = () => {
 
   const moveAnimation = {
@@ -27,21 +30,8 @@ const MainSection = () => {
       <div className='absolute top-0 left-0 w-32 xl:w-60 aspect-square'>
         <img src={shapeTop} alt="top" className='w-full h-full object-cover' />
       </div>
-      <motion.div className='absolute md:-top-20 right-0 w-32 xl:w-60 aspect-square' animate={
-        {
-          rotateZ: [0, 360],
-          transition: {
-            repeat: Infinity,
-            repeatType: 'loop',
-            duration: 20,
-          },
-        }
-      }>
-        <img src={squareTop} alt="top" className='w-full h-full object-cover' />
-      </motion.div>
-      <div className='absolute bottom-20 left-5 w-6 xl:w-8'>
-        <img src={cross} alt="top" className='w-full h-full object-contain' />
-      </div>
+      <RotatingSquare/>
+      <ThreeCross />
       <div className='flex flex-col-reverse lg:flex-row items-center justify-center text-white w-full px-10 lg:px-0 lg:w-2/3 mx-auto pt-10 lg:pt-0 min-h-screen'>
         <div className='w-full lg:w-1/2 space-y-5'>
           <motion.p
@@ -81,42 +71,11 @@ const MainSection = () => {
         </div>
         <div className='w-full lg:w-1/2 relative'>
           <motion.img src={mainImage} className='w-full h-full object-contain'
-            initial={{ opacity: 0, x:50 }}
-            whileInView={{ opacity: 1, x:0 }}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}>
           </motion.img>
-          <div className='flex items-center justify-center gap-3 absolute top-0 right-0 w-max'>
-            <motion.img src={triangle1} className='w-5 lg:w-7' animate={
-              {
-                x: [0, -10, 0],
-                transition: {
-                  repeat: Infinity,
-                  repeatType: 'loop',
-                  duration: 2,
-                },
-              }
-            } />
-            <motion.img src={triangle2} className='w-5 lg:w-7' animate={
-              {
-                x: [0, -10, 0],
-                transition: {
-                  repeat: Infinity,
-                  repeatType: 'loop',
-                  duration: 2,
-                },
-              }
-            } />
-            <motion.img src={triangle2} className='w-5 lg:w-7' animate={
-              {
-                x: [0, -5, 0],
-                transition: {
-                  repeat: Infinity,
-                  repeatType: 'loop',
-                  duration: 2,
-                },
-              }
-            } />
-          </div>
+          <ThreeTriangle classNames='top-0 right-0' />
         </div>
       </div>
 

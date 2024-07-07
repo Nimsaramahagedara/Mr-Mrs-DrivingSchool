@@ -3,10 +3,11 @@ import TopNav from '../components/TopNav'
 import MainSection from '../sections/MainSection'
 import VisionSection from '../sections/VisionSection'
 import AboutUsSection from '../sections/AboutUsSection'
-import Section07 from '../sections/Section07'
 import VideoSection from '../sections/VideoSection'
 import ContactUs from '../sections/ContactUs'
 import Services from '../sections/Services'
+import Blog from '../sections/Blog'
+import Gallery from '../sections/Gallery'
 
 const Home = () => {
   return (
@@ -18,8 +19,8 @@ const Home = () => {
       <VideoSection />
       <ContactUs />
       <Services />
-      <Section07 />
-      <Section07 />
+      <Blog />
+      <Gallery/>
     </main>
   )
 }

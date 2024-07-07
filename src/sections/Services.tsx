@@ -100,7 +100,7 @@ const Services = () => {
 
       </div>
 
-      <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2c w-full px-5 lg:px-0 lg:w-5/6 mx-auto gap-5 lg:mb-20'>
+      <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2c w-full px-5 lg:px-0 lg:w-5/6 mx-auto gap-5 mb-10 lg:mb-20 z-10 relative'>
         {
           services.map((s, idx) => (
             <ServiceBox p={s} index={idx + 1} />

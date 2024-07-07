@@ -1,12 +1,13 @@
 import React from 'react'
 import Container from '../components/Container'
 
-const Section07 = () => {
+const Gallery = () => {
+
   return (
-    <Container bgPrimary>
-        Con
+    <Container bgPrimary={false} childClassName=''>
+
     </Container>
   )
 }
 
-export default Section07
+export default Gallery

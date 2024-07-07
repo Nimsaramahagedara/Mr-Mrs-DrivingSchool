@@ -10,6 +10,7 @@ import triangle1 from '../assets/triangle-1.png'
 import triangle2 from '../assets/triangle-2.png'
 import { motion } from 'framer-motion'
 import Counter from '../components/Counter'
+import ThreeTriangle from '../components/ThreeTriangle'
 const AboutUsSection = () => {
   return (
     <Container bgPrimary className='flex items-center flex-col justify-center overflow-visible'>
@@ -75,7 +76,7 @@ const AboutUsSection = () => {
       </div>
 
 
-      <div className='flex flex-col items-center justify-center gap-3 absolute bottom-24 right-8 md:right-24 w-max'>
+      {/* <div className='flex  items-center justify-center gap-3 absolute  w-max'>
         <motion.img src={triangle1} className='w-5 lg:w-7' animate={
           {
             x: [0, -10, 0],
@@ -106,8 +107,8 @@ const AboutUsSection = () => {
             },
           }
         } />
-      </div>
-
+      </div> */}
+        <ThreeTriangle classNames='flex-col bottom-24 right-8 md:right-24'/>
     </Container>
   )
 }
