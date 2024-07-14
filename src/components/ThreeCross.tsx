@@ -4,7 +4,7 @@ type Props = {}
 
 function ThreeCross({ }: Props) {
     return (
-        <div className='absolute bottom-20 left-5 w-6 xl:w-8'>
+        <div className='absolute bottom-20 left-5 w-6 xl:w-8 z-10'>
             <img src={cross} alt="top" className='w-full h-full object-contain' />
         </div>
     )
