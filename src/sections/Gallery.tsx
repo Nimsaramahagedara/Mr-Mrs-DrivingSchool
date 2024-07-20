@@ -1,4 +1,5 @@
 import React from 'react'
+import { Gallery as GridGallery } from "react-grid-gallery";
 import Container from '../components/Container'
 import ProgressBar from '../components/ProgressBar'
 import Button from '../components/Button'
@@ -15,18 +16,17 @@ import image9 from '../assets/gallery/gallery (9).png'
 
 const Gallery = () => {
   const images = [
-    { src: image1, alt: 'Image 1', width: 'w-full', height: 'h-64' },
-    { src: image2, alt: 'Image 2', width: 'w-full', height: 'h-48' },
-    { src: image3, alt: 'Image 3', width: 'w-full', height: 'h-72' },
-    { src: image4, alt: 'Image 4', width: 'w-full', height: 'h-56' },
-    { src: image5, alt: 'Image 5', width: 'w-full', height: 'h-64' },
-    { src: image6, alt: 'Image 2', width: 'w-full', height: 'h-48' },
-    { src: image7, alt: 'Image 3', width: 'w-full', height: 'h-72' },
-    { src: image8, alt: 'Image 4', width: 'w-full', height: 'h-56' },
-    { src: image9, alt: 'Image 5', width: 'w-full', height: 'h-64' },
+    { src: image1, width: 420, height: 420 },
+    { src: image2, width: 320, height: 210 },
+    { src: image3, width: 320, height: 210 },
+    { src: image4, width: 320, height: 210 },
+    { src: image5, width: 320, height: 210 },
+    { src: image6, width: 320, height: 210 },
+    { src: image7, width: 320, height: 210 },
+    { src: image8, width: 320, height: 210 },
+    { src: image9, width: 320, height: 210 },
     // Add more images as needed
   ];
-
   return (
     <Container bgPrimary={false} childClassName=''>
       <div className='mt-20 gap-3 mb-10 lg:w-2/3 px-5 lg:px-0 mx-auto flex items-start justify-between'>
@@ -37,20 +37,19 @@ const Gallery = () => {
         </div>
         <Button>Load More</Button>
       </div>
-      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:w-2/3 mx-auto w-full">
-        {images.map((image, index) => (
-          <div key={index} className="overflow-hidden rounded-lg shadow-lg aspect-square hover:scale-105 transition duration-300 cursor-pointer" style={{ height: image.height }}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              className={`object-cover w-full h-full`}
-            />
-          </div>
-        ))}
+      <div className=' w-2/3 mx-auto'>
+        <GridGallery images={images} defaultContainerWidth={320} />
       </div>
+
     </Container>
   )
 }
 
 export default Gallery
+
+
+
+
+
+
 

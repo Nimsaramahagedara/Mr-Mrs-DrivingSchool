@@ -1,4 +1,4 @@
-import Container from '../components/Container'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import TopNav from '../components/TopNav'
 import MainSection from '../sections/MainSection'
 import VisionSection from '../sections/VisionSection'
@@ -8,7 +8,9 @@ import ContactUs from '../sections/ContactUs'
 import Services from '../sections/Services'
 import Blog from '../sections/Blog'
 import Gallery from '../sections/Gallery'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import Testimonial from '../sections/Testimonial'
+import NewsLetter from "../sections/NewsLetter";
+import Footer from "../sections/Footer";
 const Home = () => {
   return (
     <main className='relative'>
@@ -21,6 +23,9 @@ const Home = () => {
       <Services />
       <Blog />
       <Gallery/>
+      <Testimonial/>
+      <NewsLetter/>
+      <Footer/>
     </main>
   )
 }
