@@ -3,6 +3,7 @@ import logoImage from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { CiMenuBurger } from "react-icons/ci";
 import { CiMenuFries } from "react-icons/ci";
+import { navLinks } from '../config/config';
 
 const TopNav = () => {
     const [isOpen, setOpen] = useState<boolean>(false);
@@ -23,13 +24,11 @@ const TopNav = () => {
                 </div>
             </div>
             <nav className={`backdrop-blur-md bg-black/50 xl:bg-transparent xl:backdrop-blur-none xl:top-0 right-0 w-full xl:relative flex flex-col xl:flex-row items-center justify-center gap-2 py-10 transition-all duration-500 overflow-hidden xl:py-0 ${isOpen ? 'opacity-100 h-max' : 'opacity-0 h-0 xl:h-max  xl:opacity-100'}`}>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Home</Link>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>About us</Link>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Free Tutorials</Link>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Contact Us</Link>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Servicers</Link>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Blog</Link>
-                <Link to={'#'} className='px-4 py-2 text-white hover:text-amber-500'>Testimonials</Link>
+                {
+                    navLinks.map((link) => (
+                        <Link to={link.link} className='px-4 py-2 text-white hover:text-amber-500'>{link.title}</Link>
+                    ))
+                }
                 <button className='px-10 py-2 rounded-full bg-[#F3AE31] hover:bg-amber-400 text-nowrap text-white'>Schedule Consultation</button>
             </nav>
 
