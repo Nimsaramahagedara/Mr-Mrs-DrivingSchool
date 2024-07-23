@@ -1,9 +1,8 @@
-import React from 'react'
+
 import Container from '../components/Container'
 
-type Props = {}
 
-const Testimonial = (props: Props) => {
+const Testimonial = () => {
   return (
    <Container bgPrimary className='min-h-screen'>
     Hi

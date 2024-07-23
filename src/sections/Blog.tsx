@@ -22,7 +22,7 @@ const Blog = () => {
       <Carousel autoPlay infiniteLoop>
         {
           new Array(3).fill(0).map((_, i) => (
-            <div className='grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1 md:grid-cols-2 w-full px-5 lg:px-0 lg:w-4/6 mx-auto gap-5 mb-10 lg:mb-20 z-10 relative'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1 md:grid-cols-2 w-full px-5 lg:px-0 lg:w-4/6 mx-auto gap-5 mb-10 lg:mb-20 z-10 relative' key={i}>
               <BlogCard />
               <BlogCard />
               <BlogCard />
