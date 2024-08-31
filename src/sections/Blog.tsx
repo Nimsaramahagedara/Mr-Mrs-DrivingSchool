@@ -32,9 +32,9 @@ const Blog = () => {
       </Carousel>
       <img src={colorLight} className='w-1/2 lg:w-1/4 absolute top-1/2 left-0 -translate-y-1/2 z-0' />
 
-      <ThreeCross />
+      <ThreeCross className='bottom-20 left-5'/>
       <ThreeTriangle classNames='bottom-1/2 right-20 flex-col z-10' />
-      <RotatingSquare />
+      <RotatingSquare className='md:-top-20 right-0'/>
     </Container>
   )
 }

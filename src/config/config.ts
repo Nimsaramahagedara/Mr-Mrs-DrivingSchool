@@ -8,7 +8,7 @@ import { NavLinksType } from "../types/types"
 // Blog
 // Testimonials
 
-export const navLinks : NavLinksType[] = [
+export const navLinks: NavLinksType[] = [
     {
         id: 1,
         title: 'Home',
@@ -45,4 +45,13 @@ export const navLinks : NavLinksType[] = [
         link: '#'
     },
 ]
+
+export const ContactDetails = {
+    MOBILE: '0775737727',
+    WEB: '',
+    EMAIL: 'mrnmrsdrivingschool@gmail.com',
+    LOCATION: `Mr & Mrs Driving School 
+Fuel Station Building, 
+Kekanadura, Matara `
+}
 

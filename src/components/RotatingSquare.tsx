@@ -1,11 +1,13 @@
 import React from 'react'
 import squareTop from '../assets/square.png'
 import { motion } from 'framer-motion'
-type Props = {}
+type Props = {
+  className:string
+}
 
-function RotatingSquare({}: Props) {
+function RotatingSquare({className}: Props) {
   return (
-    <motion.div className='absolute md:-top-20 right-0 w-32 xl:w-60 aspect-square' animate={
+    <motion.div className={`absolute w-32 xl:w-60 aspect-square ${className}`} animate={
         {
           rotateZ: [0, 360],
           transition: {

@@ -1,10 +1,12 @@
 import React from 'react'
 import cross from '../assets/cross.png'
-type Props = {}
+type Props = {
+    className:string
+}
 
-function ThreeCross({ }: Props) {
+function ThreeCross({className }: Props) {
     return (
-        <div className='absolute bottom-20 left-5 w-6 xl:w-8 z-10'>
+        <div className={`absolute w-6 xl:w-8 z-10 ${className}`}>
             <img src={cross} alt="top" className='w-full h-full object-contain' />
         </div>
     )
