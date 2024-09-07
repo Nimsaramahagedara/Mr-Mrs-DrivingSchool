@@ -52,6 +52,13 @@ export const ContactDetails = {
     EMAIL: 'mrnmrsdrivingschool@gmail.com',
     LOCATION: `Mr & Mrs Driving School 
 Fuel Station Building, 
-Kekanadura, Matara `
+Kekanadura, Matara`
+}
+
+export const SocialLinks = {
+    FACEBOOK: 'https://www.facebook.com/mrnmrsdrivingschool/',
+    INSTAGRAM: 'https://www.instagram.com/mrnmrsdrivingschool/',
+    TWITTER: 'https://twitter.com/mrnmrsdrivingschool',
+    LINKEDIN: 'https://www.linkedin.com/company/mrnmrsdrivingschool/',
 }
 
