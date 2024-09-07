@@ -13,7 +13,7 @@ type Props = {}
 
 function Footer({ }: Props) {
   return (
-    <footer className='w-full bg-white text-white relative overflow-y-hidden'>
+    <footer id='footer' className='w-full bg-white text-white relative overflow-y-hidden'>
       <div className='bg-[#050A1E] rounded-tl-[50px] lg:rounded-tl-[15vw] flex flex-col md:flex-row gap-5 md:gap-0 items-start justify-between px-10 xl:px-20 py-20'>
         <div className='w-full xl:w-1/4 flex flex-col space-y-5 items-center justify-center'>
           <div className='flex items-center justify-center gap-8'>

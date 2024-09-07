@@ -92,7 +92,7 @@ const Services = () => {
   ]
   return (
     <Container bgPrimary={false} childClassName=''>
-      <div className='mt-20 mb-10 lg:w-2/3 px-10 lg:px-0 mx-auto'>
+      <div className='mt-20 mb-10 lg:w-2/3 px-10 lg:px-0 mx-auto' id='service'>
         <h2 className='text-xl lg:text-3xl mb-2 uppercase text-amber-400'>Services</h2>
         <div className='w-1/2'>
         <ProgressBar />

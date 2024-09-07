@@ -11,7 +11,7 @@ import { Carousel } from 'react-responsive-carousel';
 const Blog = () => {
   return (
     <Container bgPrimary className='relative'>
-      <div className='mt-20 mb-10 lg:w-2/3 px-5 gap-3 lg:px-0 mx-auto flex items-start justify-between'>
+      <div className='mt-20 mb-10 lg:w-2/3 px-5 gap-3 lg:px-0 mx-auto flex items-start justify-between' id='blog'>
 
         <div className='w-full md:w-1/2'>
           <h2 className='text-xl lg:text-3xl mb-2 uppercase text-amber-400'>Blog</h2>

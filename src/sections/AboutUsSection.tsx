@@ -14,7 +14,7 @@ import ThreeTriangle from '../components/ThreeTriangle'
 const AboutUsSection = () => {
   return (
     <Container bgPrimary className='flex items-center flex-col justify-center overflow-visible'>
-      <div className='w-40 absolute -top-32 right-10 z-0'>
+      <div className='w-40 absolute -top-32 right-10 z-0' id='about'>
         <motion.img
           animate={{ rotateZ: 360, x: 0 }} transition={{ duration: 30 }} src={shape1} className='w-full h-full object-contain' />
       </div>

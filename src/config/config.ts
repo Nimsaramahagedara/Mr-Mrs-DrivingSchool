@@ -12,37 +12,37 @@ export const navLinks: NavLinksType[] = [
     {
         id: 1,
         title: 'Home',
-        link: '#'
+        link: '#home'
     },
     {
         id: 2,
         title: 'About Us',
-        link: '#'
+        link: '#about'
     },
     {
         id: 3,
         title: 'Contact Us',
-        link: '#'
+        link: '#contact'
     },
     {
         id: 4,
         title: 'Free Tutorials',
-        link: '#'
+        link: '#tute'
     },
     {
         id: 5,
         title: 'Servicers',
-        link: '#'
+        link: '#service'
     },
     {
         id: 6,
         title: 'Blog',
-        link: '#'
+        link: '#blog'
     },
     {
         id: 7,
         title: 'Testimonials',
-        link: '#'
+        link: '#testimonial'
     },
 ]
 

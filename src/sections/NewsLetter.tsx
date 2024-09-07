@@ -5,7 +5,7 @@ type Props = {}
 
 function NewsLetter({ }: Props) {
     return (
-        <section className='relative bg-[#050A1E] w-full overflow-x-hidden overflow-y-visible'>
+        <section id='news' className='relative bg-[#050A1E] w-full overflow-x-hidden overflow-y-visible'>
             <div className={`w-full h-96 bg-white rounded-br-[50px] lg:rounded-br-[250px] rounded-tl-[50px] lg:rounded-tl-[15vw] overflow-x-hidden overflow-y-visible flex items-center justify-center`}>
                 <img src={stop} alt="stop" className='w-20 xl:w-52 absolute top-2 left-20 z-0 ' />
                 <RotatingSquare className='md:-top-20 right-0'/>
