@@ -62,3 +62,7 @@ export const SocialLinks = {
     LINKEDIN: 'https://www.linkedin.com/company/mrnmrsdrivingschool/',
 }
 
+//Gallery
+export const MIN_WIDTH = 110
+export const MAX_WIDTH = 85
+

@@ -12,19 +12,21 @@ import image6 from '../assets/gallery/gallery (6).png'
 import image7 from '../assets/gallery/gallery (7).png'
 import image8 from '../assets/gallery/gallery (8).png'
 import image9 from '../assets/gallery/gallery (9).png'
+import { MAX_WIDTH, MIN_WIDTH } from '../config/config';
+import { getRandomNumber } from '../utils/screenFunctions';
 
 
 const Gallery = () => {
   const images = [
-    { src: image1, width: 420, height: 420 },
-    { src: image2, width: 320, height: 210 },
-    { src: image3, width: 320, height: 210 },
-    { src: image4, width: 320, height: 210 },
-    { src: image5, width: 320, height: 210 },
-    { src: image6, width: 320, height: 210 },
-    { src: image7, width: 320, height: 210 },
-    { src: image8, width: 320, height: 210 },
-    { src: image9, width: 320, height: 210 },
+    { src: image1},
+    { src: image2},
+    { src: image3},
+    { src: image4},
+    { src: image5},
+    { src: image6},
+    { src: image7},
+    { src: image8},
+    { src: image9},
     // Add more images as needed
   ];
   return (
@@ -37,9 +39,27 @@ const Gallery = () => {
         </div>
         <Button>Load More</Button>
       </div>
-      <div className=' w-2/3 mx-auto'>
-        <GridGallery images={images} defaultContainerWidth={320} />
+      <div className='w-full px-10 md:px-20 mb-20'>
+      <div className='grid grid-cols-2 md:grid-cols-4'>
+        {
+          images.slice(0, 4).map((image, index) => (
+            <div className='aspect-square hover:scale-105 ease-in-out cursor-pointer duration-300' style={{scale:`${getRandomNumber(MIN_WIDTH,MAX_WIDTH)}%`}} key={index}>
+              <img src={image.src} className="w-full h-full object-contain" />
+            </div>
+          ))
+        }
       </div>
+      <div className='grid grid-cols-2 md:grid-cols-4 -translate-y-14'>
+        {
+          images.slice(5).map((image, index) => (
+            <div className='aspect-square hover:scale-105 ease-in-out cursor-pointer duration-300 border-black border-2 ' style={{scale:`${getRandomNumber(MIN_WIDTH,MAX_WIDTH)}%`}} key={index}>
+              <img src={image.src} className="w-full h-full object-cover" />
+            </div>
+          ))
+        }
+      </div>
+      </div>
+
 
     </Container>
   )
