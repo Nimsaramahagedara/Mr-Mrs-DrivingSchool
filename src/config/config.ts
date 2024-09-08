@@ -1,3 +1,4 @@
+import { TestimonialType } from "../components/ReviewCard"
 import { NavLinksType } from "../types/types"
 
 // Home
@@ -66,3 +67,44 @@ export const SocialLinks = {
 export const MIN_WIDTH = 110
 export const MAX_WIDTH = 85
 
+
+// Testimonials
+export const Testimonials : TestimonialType[] = [
+    {
+        imgUrl:'https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid',
+        name: 'Sherri Cronin',
+        occupation:'Dynamic Program Designer',
+        title:'Inventore vel alias consequatur nihil maiores voluptate enim ea deleniti.'
+    },
+    {
+        imgUrl:'https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid',
+        name: 'Sherri Cronin',
+        occupation:'Dynamic Program Designer',
+        title:'Inventore vel alias consequatur nihil maiores voluptate enim ea deleniti.'
+    },
+    {
+        imgUrl:'https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid',
+        name: 'Sherri Cronin',
+        occupation:'Dynamic Program Designer',
+        title:'Inventore vel alias consequatur nihil maiores voluptate enim ea deleniti.'
+    },
+    {
+        imgUrl:'https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid',
+        name: 'Sherri Cronin',
+        occupation:'Dynamic Program Designer',
+        title:'Inventore vel alias consequatur nihil maiores voluptate enim ea deleniti.'
+    },
+    {
+        imgUrl:'https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid',
+        name: 'Sherri Cronin',
+        occupation:'Dynamic Program Designer',
+        title:'Inventore vel alias consequatur nihil maiores voluptate enim ea deleniti.'
+    },
+    {
+        imgUrl:'https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid',
+        name: 'Sherri Cronin',
+        occupation:'Dynamic Program Designer',
+        title:'Inventore vel alias consequatur nihil maiores voluptate enim ea deleniti.'
+    }
+    
+]
