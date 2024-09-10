@@ -10,6 +10,7 @@ function BlogCard({ }: Props) {
         <motion.div className='w-full text-white bg-black flex items-stretch md:flex-col'
             whileInView={{ rotateX: 0, opacity: 1 }}
             initial={{ rotateX: 90, opacity: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.05, border: '2px solid white' }}
             style={{ perspective: 1000 }}

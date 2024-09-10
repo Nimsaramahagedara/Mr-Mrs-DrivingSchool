@@ -19,6 +19,7 @@ const ServiceBox: React.FC<CompoType> = ({ p, index }) => {
             whileInView={{ rotateX: 0, opacity: 1 }}
             initial={{ rotateX: 90, opacity: 0 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             whileHover={{ scale: 1.05, border:'2px solid white' }}
             style={{ perspective: 1000 }}
         >

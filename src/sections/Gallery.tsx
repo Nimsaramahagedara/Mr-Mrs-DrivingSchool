@@ -31,7 +31,7 @@ const Gallery = () => {
   ];
   return (
     <Container bgPrimary={false} childClassName=''>
-      <div id='gallery' className='mt-20 gap-3 mb-10 lg:w-2/3 px-5 lg:px-0 mx-auto flex items-start justify-between'>
+      <div id='gallery' className='mt-20 gap-3 mb-10 lg:w-3/4 px-5 lg:px-0 mx-auto flex items-start justify-between'>
 
         <div className='w-full md:w-1/2'>
           <h2 className='text-xl lg:text-3xl mb-2 uppercase text-amber-400'>Gallery</h2>
@@ -40,16 +40,16 @@ const Gallery = () => {
         <Button>Load More</Button>
       </div>
       <div className='w-full px-10 md:px-20 mb-20'>
-      <div className='grid grid-cols-2 md:grid-cols-4'>
+      <div className='grid grid-cols-2 md:grid-cols-4 lg:px-5'>
         {
           images.slice(0, 4).map((image, index) => (
-            <div className='aspect-square hover:scale-105 ease-in-out cursor-pointer duration-300' style={{scale:`${getRandomNumber(MIN_WIDTH,MAX_WIDTH)}%`}} key={index}>
-              <img src={image.src} className="w-full h-full object-contain" />
+            <div className='aspect-square hover:scale-105 ease-in-out cursor-pointer duration-300 border-black border-2' style={{scale:`${getRandomNumber(MIN_WIDTH,MAX_WIDTH)}%`}} key={index}>
+              <img src={image.src} className="w-full h-full object-cover" />
             </div>
           ))
         }
       </div>
-      <div className='grid grid-cols-2 md:grid-cols-4 -translate-y-14'>
+      <div className='grid grid-cols-2 md:grid-cols-4 -translate-y-14 lg:px-5'>
         {
           images.slice(5).map((image, index) => (
             <div className='aspect-square hover:scale-105 ease-in-out cursor-pointer duration-300 border-black border-2 ' style={{scale:`${getRandomNumber(MIN_WIDTH,MAX_WIDTH)}%`}} key={index}>
