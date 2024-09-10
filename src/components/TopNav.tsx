@@ -37,7 +37,7 @@ const TopNav = () => {
         }
       }
     return (
-        <header className='fixed w-full top-0 left-0 flex flex-col xl:flex-row items-center xl:items-start justify-between px-10 py-5 z-20'>
+        <header className='fixed w-full top-0 left-0 flex flex-col xl:flex-row items-center xl:items-start justify-between px-5 lg:px-10 py-5 z-20'>
             <div className='w-full xl:w-max flex justify-between items-center'>
                 <div className='w-20 xl:w-32 min-w-20'>
                     <img src={logoImage} className='w-full h-full object-contain' />

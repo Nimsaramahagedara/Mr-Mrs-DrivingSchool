@@ -7,7 +7,7 @@ const VisionSection = () => {
     return (
         <Container bgPrimary={false} childClassName='flex items-center justify-center'>
             <img src={logoBig} className='w-1/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0' />
-            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 w-full items-start justify-between px-10 md:px-0 xl:w-2/3 mx-auto z-10'>
+            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 w-full items-start justify-between px-5 lg:px-10 md:px-0 xl:w-2/3 mx-auto z-10'>
                 <VisionBox
                     title='Vision'
                     desc='Our vision is to create a world-class driving school that empowers individuals with the skills and knowledge to become safe, confident, and responsible drivers. We strive to be a leading force in promoting road safety, reducing accidents, and building a community of skilled drivers who contribute to a safer and more sustainable future on the roads.'

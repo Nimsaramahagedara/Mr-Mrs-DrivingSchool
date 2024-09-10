@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const ContactUs = () => {
   return (
     <Container bgPrimary className='' id='contact'>
-      <div style={{ backgroundImage: `url('${coverImg}')` }} className='min-h-screen bg-cover bg-center flex flex-col lg:flex-row items-center justify-center w-full px-10 lg:px-20'>
+      <div style={{ backgroundImage: `url('${coverImg}')` }} className='min-h-screen bg-cover bg-center flex flex-col lg:flex-row items-center justify-center w-full px-5 lg:px-20'>
         <div className='text-white mx-auto my-8 lg:w-1/2 w-full px-0 lg:px-20'>
           <h2 className='text-xl lg:text-3xl mb-5'>Let's talk with us</h2>
           <ProgressBar />

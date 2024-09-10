@@ -32,7 +32,7 @@ const MainSection = () => {
       </div>
       <RotatingSquare className='md:-top-20 right-0'/>
       <ThreeCross className='bottom-20 left-5'/>
-      <div className='flex flex-col-reverse lg:flex-row items-center justify-center text-white w-full px-10 lg:px-0 lg:w-2/3 mx-auto pt-10 lg:pt-0 min-h-screen'>
+      <div className='flex flex-col-reverse lg:flex-row items-center justify-center text-white w-full px-5 lg:px-0 lg:w-2/3 mx-auto pt-10 lg:pt-0 min-h-screen'>
         <div className='w-full lg:w-1/2 space-y-5'>
           <motion.p
             initial={{ opacity: 0 }}

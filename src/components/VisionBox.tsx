@@ -14,9 +14,9 @@ const VisionBox: React.FC<Props> = ({ title, desc, className }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       style={{ perspective: 1000 }} // Add perspective to the parent for 3D effect
-      className={`p-5 space-y-5 hover:border-gray-100 hover:bg-white transition-all hover:shadow-md border-transparent border cursor-pointer rounded-xl ${className}`}>
+      className={`px-4 py-4 lg:p-5 space-y-5 hover:border-gray-100 hover:bg-white transition-all hover:shadow-md border-transparent border cursor-pointer rounded-xl ${className}`}>
       <h2 className='text-amber-500 font-semibold text-xl'>{title}</h2>
-      <p>{desc}</p>
+      <p className='text-xs lg:text-sm'>{desc}</p>
     </motion.div>
   )
 }
