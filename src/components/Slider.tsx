@@ -15,7 +15,7 @@ type Props = {
 
 }
 
-export default function Slider({  }: Props) {
+export default function Slider({ }: Props) {
     return (
         <Swiper
             effect={'cards'}
@@ -24,16 +24,21 @@ export default function Slider({  }: Props) {
             className="mySwiper bg-white"
 
         >
-            <SwiperSlide className='bg-white rounded-full overflow-hidden'>
-                <YoutubeVideo link='https://youtu.be/Cu5hhxP_prE?si=q2z-Jfnaa2UIVte3' />
+            <SwiperSlide className='bg-white rounded-full relative'>
+                <div className='bg-white rounded-none lg:rounded-full overflow-hidden'>
+                    <YoutubeVideo link='https://youtu.be/VIVaqt4VhKc?si=m8DzWafjUekAj95h' />
+                </div>
             </SwiperSlide>
-            <SwiperSlide className='bg-white rounded-full overflow-hidden'>
-                <YoutubeVideo link='https://youtu.be/YwgNpObouB0?si=_Hawrz06LC-ajuKF' />
+            <SwiperSlide className='bg-white rounded-full relative'>
+                <div className='bg-white rounded-none lg:rounded-full overflow-hidden'>
+                    <YoutubeVideo link='https://youtu.be/VIVaqt4VhKc?si=m8DzWafjUekAj95h' />
+                </div>
             </SwiperSlide>
-            <SwiperSlide className='bg-white rounded-full overflow-hidden'>
-                <YoutubeVideo link='https://youtu.be/Cu5hhxP_prE?si=q2z-Jfnaa2UIVte3' />
+            <SwiperSlide className='bg-white rounded-full relative'>
+                <div className='bg-white rounded-none lg:rounded-full overflow-hidden'>
+                    <YoutubeVideo link='https://youtu.be/VIVaqt4VhKc?si=m8DzWafjUekAj95h' />
+                </div>
             </SwiperSlide>
-
 
         </Swiper>
     )

@@ -1,15 +1,13 @@
-import React from 'react'
 import Container from '../components/Container'
 import ProgressBar from '../components/ProgressBar'
 import Button from '../components/Button'
-import YoutubeVideo from '../components/YoutubeVideo'
 import Slider from '../components/Slider'
 import noTurnImg from '../assets/no-u-turn-sign.png'
 import roadSign from '../assets/road-sign.png'
 const VideoSection = () => {
   return (
     <Container bgPrimary={false} childClassName='flex items-center justify-center w-full lg:flex-row flex-col'>
-      <div className='w-full px-5 lg:px-0 lg:w-2/3 mx-auto flex flex-col-reverse py-10 lg:py-0 lg:flex-row items-center justify-between'>
+      <div className='w-full px-5 lg:px-0 lg:w-2/3 mx-auto flex flex-col-reverse py-10 lg:py-0 lg:flex-row items-center justify-between max-w-5xl'>
         <div className='w-full lg:w-2/6 space-y-5 lg:px-5'>
           <h4 className='text-amber-400 text-xl md:text-4xl font-semibold'>Free Tutorials</h4>
           <ProgressBar />

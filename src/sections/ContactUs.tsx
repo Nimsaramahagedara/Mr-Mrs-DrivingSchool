@@ -5,6 +5,7 @@ import ProgressBar from '../components/ProgressBar'
 import { FaLocationPin } from 'react-icons/fa6'
 import { IoLocation, IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp, IoMail } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
+import { ContactDetails, SocialLinks } from '../config/config'
 const ContactUs = () => {
   return (
     <Container bgPrimary className='' id='contact'>
@@ -24,15 +25,15 @@ const ContactUs = () => {
               </span>
             </Link>
 
-            <Link to='https://wa.me/+94775737727' className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
+            <Link to={`https://wa.me/${ContactDetails.MOBILE}`} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLogoWhatsapp size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
-                0775 737 727
+                {ContactDetails.MOBILE}
               </span>
             </Link>
 
 
-            <Link to={'#'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
+            <Link to={SocialLinks.FACEBOOK} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLogoFacebook size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 Mr&Mrs Driving School
@@ -40,7 +41,7 @@ const ContactUs = () => {
             </Link>
 
 
-            <Link to={'#'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
+            <Link to={SocialLinks.INSTAGRAM} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoLogoInstagram size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
                 Mr & Mrs Driving School
@@ -48,21 +49,21 @@ const ContactUs = () => {
             </Link>
 
 
-            <Link to={'mailto:mrnmrsdrivingschool@gmail.com'} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
+            <Link to={`mailto:${ContactDetails.EMAIL}`} className='flex items-center justify-start gap-3 hover:-translate-y-1 w-max transition-all'>
               <IoMail size={32} className='text-amber-400' />
               <span className='text-sm lg:text-xl'>
-                mrnmrsdrivingschool@gmail.com
+                {ContactDetails.EMAIL}
               </span>
             </Link>
           </div>
         </div>
         <form className='border-2 border-amber-400 rounded-xl p-5 lg:p-10  mx-auto my-8 lg:w-1/3 w-full flex flex-col items-center space-y-5'>
           <div className='flex items-center justify-center gap-2 lg:gap-5 w-full'>
-            <input type="text" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='First Name'  />
-            <input type="text" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Last Name'  />
+            <input type="text" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='First Name' />
+            <input type="text" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Last Name' />
           </div>
-          <input type="email" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Email'  />
-          <input type="tel" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Phone Number'  />
+          <input type="email" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Email' />
+          <input type="tel" className='px-4 py-3 rounded-full outline-none focus:outline-none border-none w-full' placeholder='Phone Number' />
           <textarea name="" id="" rows={10} placeholder='Your Message' className='px-4 py-3 rounded-xl outline-none focus:outline-none border-none w-full'>
 
           </textarea>

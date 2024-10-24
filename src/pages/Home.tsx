@@ -11,6 +11,7 @@ import Gallery from '../sections/Gallery'
 import Testimonial from '../sections/Testimonial'
 import NewsLetter from "../sections/NewsLetter";
 import Footer from "../sections/Footer";
+import SwiperSlider from "../components/SwiperSlider";
 const Home = () => {
   return (
     <main className='relative'>

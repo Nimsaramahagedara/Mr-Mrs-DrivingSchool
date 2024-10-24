@@ -31,6 +31,7 @@ const Testimonial = () => {
                 {
                   new Array(testPerPage).fill(0).map((_, j) => {
                     if(i * testPerPage + j >= TestimonialCount) return
+                    
                     return <ReviewCard key={j} {...Testimonials[i * testPerPage + j]} className={`${j < 2 ? 'lg:-translate-x-1/3 lg:mt-8' : 'lg:translate-x-1/3 lg:-mt-8' }`} />
                   })
                 }

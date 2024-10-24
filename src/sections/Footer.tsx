@@ -9,9 +9,11 @@ import RotatingSquare from '../components/RotatingSquare'
 import ThreeCross from '../components/ThreeCross'
 import ThreeTriangle from '../components/ThreeTriangle'
 import ySign from '../assets/ySign.png'
+import { scrollIntoView } from '../utils/screenFunctions'
 type Props = {}
 
 function Footer({ }: Props) {
+  
   return (
     <footer id='footer' className='w-full bg-white text-white relative overflow-y-hidden'>
       <div className='bg-[#050A1E] rounded-tl-[50px] lg:rounded-tl-[15vw] flex flex-col md:flex-row gap-5 md:gap-0 items-start justify-between px-5 xl:px-20 py-20'>
@@ -38,7 +40,7 @@ function Footer({ }: Props) {
           <ul className='flex flex-col gap-2'>
             {
               navLinks.map((link) => (
-                <Link key={link.id} className='hover:text-amber-400' to={link.link}>{link.title}</Link>
+                <Link key={link.id} className='hover:text-amber-400'to={'#'}  onClick={() => scrollIntoView(link.link.slice(1))}>{link.title}</Link>
               ))
             }
           </ul>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { CiMenuBurger } from "react-icons/ci";
 import { CiMenuFries } from "react-icons/ci";
 import { navLinks } from '../config/config';
+import { scrollIntoView } from '../utils/screenFunctions';
 
 const TopNav = () => {
     const [isOpen, setOpen] = useState<boolean>(false);
@@ -29,13 +30,6 @@ const TopNav = () => {
         });
       }, [])
 
-      
-      const scrollIntoView = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
     return (
         <header className='fixed w-full top-0 left-0 flex flex-col xl:flex-row items-center xl:items-start justify-between px-5 lg:px-10 py-5 z-20'>
             <div className='w-full xl:w-max flex justify-between items-center'>
